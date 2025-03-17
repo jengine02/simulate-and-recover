@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Optional: Activate virtualenv if needed
-# source ../venv/bin/activate
+
+
+source ../venv/bin/activate
 
 # Navigate to tests directory
 cd "$(dirname "$0")"

@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gamma
+import math
 
 #EZ Diffusion Equations
 
@@ -22,7 +23,7 @@ def predVarianceRT(y, v, a, t):
 
 
 # Simulate Tobs
-Tobs_samples = np.random.binomial(n=N, p=Rpred, size=num_samples)
+Robs_samples = np.random.binomial(n=N, p=Rpred, size=num_samples)
 
 # Simulate Mobs
 sampling_std = np.sqrt(Vpred / N)
@@ -36,11 +37,9 @@ Vobs_samples = np.random.gamma(shape=alpha, scale=beta, size=num_samples)
 
 
 
-
-
 #Inverse Equations
 
-L = math.log(Robs/(1 - Robs))
+L = math.log(Robs_samples/(1 - Robs_samples))
 
 def DriftRate(Robs, Mobs, Vobs, sgn):
     vest = sgn * (Robs - 0.5) * (((L * (Robs ** 2 - Robs * L + Robs - 0.5))/Vobs) ** 0.25)
