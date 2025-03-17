@@ -58,3 +58,5 @@ def NondecisionTime(Mobs, a, v, exp):
 
 
 
+if __name__ == "__main__":
+    main()
