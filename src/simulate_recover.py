@@ -24,8 +24,7 @@ Vpred = (a/(2 * (v**3))) * ((1 - (2 * a * v * y) - (y**2))/((y + 1)**2))
 
 
 # -- Simulating 'Observed' Summary Statistics --
-# Use of ChatGPT to help with use of numpy
-
+# Use of ChatGPT to help with use of numpy functions
 num_samples = 1
 
 # Simulate Tobs
@@ -46,7 +45,7 @@ print("Vobs = ", Vobs_samples)
 
 
 
-# Temporary Testing Parameters
+# Samples -> Parameters
 Robs = Robs_samples
 Mobs = Mobs_samples
 Vobs = Vobs_samples
