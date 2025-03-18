@@ -47,6 +47,14 @@ print("Vobs = ", Vobs_samples)
 
 
 
+for i in Robs_samples:
+    print("Robs = ", i)
+    for i in Mobs_samples:
+        print("Mobs = ", i)
+        for i in Vobs_samples:
+            print("Vobs = ", i)
+
+
 # -- Calculate 'Estimated' Parameters --
 # Temporary Testing Parameters
 Robs = .5
