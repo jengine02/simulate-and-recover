@@ -15,7 +15,13 @@ def main():
         final_result = pd.DataFrame(final_result)
 
     os.makedirs("results", exist_ok=True)
-    final_result.to_csv("results/ez_diffusion_final_results.csv", index=False)
+    final_result.to_csv("results/ez_diffusion_results.csv", index=False)
+    
+    # Analyze and plot results
+    # summary = model.plotting_results(final_result)
+    # summary.to_csv("results/ez_diffusion_summary.csv", index=False)
+    # model.plot_
+    
 
 if __name__ == "__main__":
     main()
