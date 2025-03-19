@@ -6,7 +6,6 @@ This project implements a simulate-and-recover exercise for the diffusion model,
 - [Introduction](#introduction)
 - [Setup](#setup)
 - [Results](#results)
-- [Tests](#tests)
 - [Credits](#credits)
 
 ## Introduction
@@ -29,8 +28,8 @@ To run this project, you need Python 3 and the following dependencies:
 - `pandas`
 
 ## Results
-
-## Tests
+I struggled a lot with the premise of the assignment and spent much time figuring out the formatting of my files. I was able to use the documentation from the class and different libraries to help me figure out calculations. I learned about the importance of research and trial and error. Organization of the testing files helped a lot in error finding and also being able to go step by step using Jupyter as a basis helped a lot.
+I was able to get my code to go through each equation and output the bias and squared errors. Through the process, finding out how I can submit a 
 
 ## Credits
 - Use of ChatGPT to debug and run tests for code

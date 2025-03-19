@@ -122,11 +122,13 @@ class EZDiffusion:
         return bias, sq_error
     
     def run_sim_samples(self, N, iterations):
-        final_result = []
+        final_bias = []
+        final_sq_error = []
 
         for i in N:
             print('Sample Size = ', i)
-            result = self.run_sim_iterations(i, iterations)
-            final_result.append(result)
+            bias, sq_error = self.run_sim_iterations(i, iterations)
+            final_bias.append(bias)
+            final_sq_error.append(sq_error)
         
-        return final_result
+        return final_bias, final_sq_error
